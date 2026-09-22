@@ -3,384 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CrushSVG emails</title>
+  <title>CrushSVG Email Templates</title>
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
+      padding: 40px 24px;
       background: #EDE6E0;
       font-family: Arial, sans-serif;
-      padding: 24px;
       color: #3A1F14;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
     }
     h1 {
-      font-size: 18px;
+      font-size: 20px;
       color: #3A1F14;
-      margin: 0 0 16px;
+      margin: 0 0 8px;
     }
-    .nav-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
-      align-items: center;
-    }
-    .nav-tab {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      background: #DFD7CF;
-      color: #5E4A3F;
-      border: 1px solid #D2C7BD;
-      transition: all 0.15s ease;
-      cursor: pointer;
-    }
-    .nav-tab:hover {
-      background: #D5CCC3;
-      color: #3A1F14;
-    }
-    .nav-tab.active {
-      background: #D94A1E;
-      color: #FFFFFF;
-      border-color: #C23E15;
-    }
-    .template-card {
-      max-width: 640px;
-    }
-    .template-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .template-header p {
-      margin: 0;
-      font-size: 13px;
-      font-weight: bold;
-      color: #5E4A3F;
-    }
-    .template-header a.file-link {
-      color: #D94A1E;
-      text-decoration: underline;
-    }
-    .template-header .template-desc {
-      font-weight: normal;
-      color: #6B5A50;
-      margin-left: 4px;
-    }
-    .controls {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .btn-action {
-      display: inline-block;
-      padding: 4px 9px;
-      font-size: 12px;
-      font-weight: bold;
-      border-radius: 4px;
-      text-decoration: none;
-      background: #DFD7CF;
-      color: #5E4A3F;
-      border: 1px solid #D2C7BD;
-      transition: all 0.15s ease;
-    }
-    .btn-action:hover {
-      background: #D5CCC3;
-      color: #3A1F14;
-    }
-    .btn-raw {
-      color: #D94A1E;
-      font-size: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 4px 6px;
-    }
-    .btn-raw:hover {
-      text-decoration: underline;
-    }
-    iframe.email-frame {
-      width: 640px;
-      max-width: 100%;
-      height: 900px;
-      border: 0;
-      background: #F5F0EA;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(58, 31, 20, 0.08);
-      display: block;
-    }
-    .directory-view {
-      max-width: 640px;
-      background: #FFFBF7;
-      border: 1px solid #DFD7CF;
-      border-radius: 8px;
-      padding: 16px 20px;
-      box-shadow: 0 4px 16px rgba(58, 31, 20, 0.04);
-    }
-    .directory-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
-      border-bottom: 1px solid #EFE8E1;
-      gap: 12px;
-    }
-    .directory-item:last-child {
-      border-bottom: 0;
-    }
-    .directory-info {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .directory-title {
+    p.sub {
       font-size: 14px;
+      color: #5E4A3F;
+      margin: 0 0 24px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    a {
+      display: block;
+      background: #FFFBF7;
+      padding: 16px 20px;
+      border-radius: 8px;
+      border: 1px solid #DFD7CF;
+      text-decoration: none;
+      color: #3A1F14;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    a:hover {
+      border-color: #D94A1E;
+      transform: translateY(-1px);
+    }
+    .file-name {
+      font-size: 15px;
       font-weight: bold;
       color: #D94A1E;
-      text-decoration: none;
+      margin-bottom: 4px;
     }
-    .directory-title:hover {
-      text-decoration: underline;
-    }
-    .directory-sub {
+    .file-desc {
       font-size: 13px;
       color: #6B5A50;
-    }
-    .directory-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-shrink: 0;
-    }
-    .btn-open-live {
-      display: inline-block;
-      background: #D94A1E;
-      color: #FFFFFF;
-      font-size: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: background 0.15s ease;
-    }
-    .btn-open-live:hover {
-      background: #C23E15;
-    }
-    @media (max-width: 680px) {
-      body { padding: 16px; }
-      iframe.email-frame { height: 80vh; }
     }
   </style>
 </head>
 <body>
-
-  <h1>CrushSVG send-ready emails</h1>
-
-  <!-- Navigation Bar -->
-  <nav class="nav-bar" id="navBar" aria-label="Email templates navigation">
-    <a href="#all" class="nav-tab" id="tab-all">📁 All Templates</a>
-    <!-- Template tabs generated dynamically -->
-  </nav>
-
-  <!-- Single Live Template Page View -->
-  <main id="templateView" class="template-card" style="display: none;">
-    <div class="template-header">
-      <p>
-        <a id="tplLink" class="file-link" href="#" target="_blank"></a>
-        <span id="tplTitle" class="template-desc"></span>
-      </p>
-      <div class="controls">
-        <a id="prevBtn" class="btn-action" href="#" title="Previous Template (Left Arrow)">&larr; Prev</a>
-        <a id="nextBtn" class="btn-action" href="#" title="Next Template (Right Arrow)">Next &rarr;</a>
-        <a id="rawBtn" class="btn-raw" href="#" target="_blank" title="Open raw email file in new tab">&#x2197; Open Raw</a>
-      </div>
-    </div>
-    <iframe id="emailFrame" class="email-frame" title="Email Template Live Preview" src="about:blank"></iframe>
-  </main>
-
-  <!-- Directory / Hub View -->
-  <section id="directoryView" class="directory-view" style="display: none;">
-    <p style="margin: 0 0 14px; font-size: 13px; font-weight: bold; color: #5E4A3F;">
-      Select an email template to view its individual live page:
-    </p>
-    <div id="directoryList"></div>
-  </section>
-
-  <script>
-    const templates = [
-      { id: '01-welcome', file: '01-welcome.html', name: '01 Welcome', title: 'Welcome to CrushSVG' },
-      { id: '02-free-conversions-used', file: '02-free-conversions-used.html', name: '02 Conversions Used', title: "You've used your 3 free conversions" },
-      { id: '03-password-reset', file: '03-password-reset.html', name: '03 Password Reset', title: 'Reset your CrushSVG password' },
-      { id: '04-product-update', file: '04-product-update.html', name: '04 Product Update', title: 'Four new tools, one converter' },
-      { id: '05-newsletter', file: '05-newsletter.html', name: '05 Newsletter', title: 'Getting SVGs to render in Outlook (finally)' },
-      { id: '06-upgrade-pro', file: '06-upgrade-pro.html', name: '06 Upgrade Pro', title: 'Batch convert. Ship faster.' },
-      { id: '07-download-ready', file: '07-download-ready.html', name: '07 Download Ready', title: 'Your PNGs are ready' },
-      { id: '08-re-engagement', file: '08-re-engagement.html', name: '08 Re-engagement', title: 'Still juggling converters?' }
-    ];
-
-    const navBar = document.getElementById('navBar');
-    const tabAll = document.getElementById('tab-all');
-    const templateView = document.getElementById('templateView');
-    const directoryView = document.getElementById('directoryView');
-    const directoryList = document.getElementById('directoryList');
-    const tplLink = document.getElementById('tplLink');
-    const tplTitle = document.getElementById('tplTitle');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const rawBtn = document.getElementById('rawBtn');
-    const emailFrame = document.getElementById('emailFrame');
-
-    // Build template navigation tabs
-    templates.forEach(t => {
-      const tab = document.createElement('a');
-      tab.href = '#' + t.file;
-      tab.className = 'nav-tab';
-      tab.id = 'tab-' + t.id;
-      tab.textContent = t.file;
-      navBar.appendChild(tab);
-    });
-
-    // Build directory list
-    templates.forEach((t, idx) => {
-      const item = document.createElement('div');
-      item.className = 'directory-item';
-      item.innerHTML = `
-        <div class="directory-info">
-          <a class="directory-title" href="#${t.file}">${t.file}</a>
-          <span class="directory-sub">${t.title}</span>
-        </div>
-        <div class="directory-actions">
-          <a class="btn-action" href="${t.file}" target="_blank" title="Open raw email file">&#x2197; Raw</a>
-          <a class="btn-open-live" href="#${t.file}">View Live &rarr;</a>
-        </div>
-      `;
-      directoryList.appendChild(item);
-    });
-
-    function resolveTemplate(key) {
-      if (!key) return null;
-      const clean = decodeURIComponent(key).trim().toLowerCase().replace(/^#/, '').replace(/^\/?/, '');
-      if (clean === 'all' || clean === 'list' || clean === 'directory') return 'all';
-
-      return templates.find(t => 
-        t.file.toLowerCase() === clean ||
-        t.file.toLowerCase() === clean + '.html' ||
-        t.id.toLowerCase() === clean ||
-        t.id.toLowerCase() === clean.replace(/\.html$/, '')
-      ) || null;
-    }
-
-    function getCurrentTarget() {
-      // 1. Check query parameter: ?template=..., ?page=..., ?file=...
-      const params = new URLSearchParams(window.location.search);
-      const queryVal = params.get('template') || params.get('page') || params.get('file') || params.get('email');
-      if (queryVal) {
-        const match = resolveTemplate(queryVal);
-        if (match) return match;
-      }
-
-      // 2. Check URL hash
-      if (window.location.hash) {
-        const hashVal = window.location.hash.slice(1);
-        const match = resolveTemplate(hashVal);
-        if (match) return match;
-      }
-
-      // 3. Check localStorage for remembered template during active development/reloads
-      try {
-        const saved = localStorage.getItem('crushsvg_active_template');
-        if (saved) {
-          const match = resolveTemplate(saved);
-          if (match && match !== 'all') return match;
-        }
-      } catch (e) {}
-
-      // 4. Default to first template
-      return templates[0];
-    }
-
-    let currentTemplateIndex = 0;
-
-    function render() {
-      const target = getCurrentTarget();
-
-      // Reset active tabs
-      document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
-
-      if (target === 'all') {
-        tabAll.classList.add('active');
-        templateView.style.display = 'none';
-        directoryView.style.display = 'block';
-        emailFrame.src = 'about:blank';
-        document.title = 'CrushSVG emails - All Templates';
-        try { localStorage.setItem('crushsvg_active_template', 'all'); } catch (e) {}
-        return;
-      }
-
-      const activeTemplate = (typeof target === 'object' && target !== null) ? target : templates[0];
-      const index = templates.findIndex(t => t.file === activeTemplate.file);
-      currentTemplateIndex = index >= 0 ? index : 0;
-
-      // Update active tab
-      const activeTab = document.getElementById('tab-' + activeTemplate.id);
-      if (activeTab) activeTab.classList.add('active');
-
-      // Update template live page details
-      tplLink.textContent = activeTemplate.file;
-      tplLink.href = activeTemplate.file;
-      tplTitle.textContent = activeTemplate.title ? '— ' + activeTemplate.title : '';
-
-      // Update Prev / Next
-      const prevIdx = (currentTemplateIndex - 1 + templates.length) % templates.length;
-      const nextIdx = (currentTemplateIndex + 1) % templates.length;
-      prevBtn.href = '#' + templates[prevIdx].file;
-      nextBtn.href = '#' + templates[nextIdx].file;
-      prevBtn.title = `Previous: ${templates[prevIdx].file} (Left Arrow)`;
-      nextBtn.title = `Next: ${templates[nextIdx].file} (Right Arrow)`;
-      rawBtn.href = activeTemplate.file;
-
-      // Set iframe src only to the selected template
-      const currentSrc = emailFrame.src || '';
-      if (!currentSrc.endsWith('/' + activeTemplate.file) && !currentSrc.endsWith(activeTemplate.file)) {
-        emailFrame.src = activeTemplate.file;
-      }
-
-      templateView.style.display = 'block';
-      directoryView.style.display = 'none';
-      document.title = `${activeTemplate.file} - CrushSVG email`;
-
-      try {
-        localStorage.setItem('crushsvg_active_template', activeTemplate.file);
-      } catch (e) {}
-    }
-
-    // Listen for hash changes & browser navigation (Back/Forward)
-    window.addEventListener('hashchange', render);
-    window.addEventListener('popstate', render);
-
-    // Keyboard navigation (Left / Right arrow keys)
-    window.addEventListener('keydown', e => {
-      if (e.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
-      if (templateView.style.display === 'none') return;
-
-      if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        const prevIdx = (currentTemplateIndex - 1 + templates.length) % templates.length;
-        window.location.hash = templates[prevIdx].file;
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        const nextIdx = (currentTemplateIndex + 1) % templates.length;
-        window.location.hash = templates[nextIdx].file;
-      }
-    });
-
-    // Initial render
-    render();
-  </script>
+  <div class="container">
+    <h1>CrushSVG Email Templates</h1>
+    <p class="sub">Select any email template to open it individually on its own separate page:</p>
+    <ul>
+      <li>
+        <a href="01-welcome.html">
+          <div class="file-name">01-welcome.html</div>
+          <div class="file-desc">Welcome to CrushSVG</div>
+        </a>
+      </li>
+      <li>
+        <a href="02-free-conversions-used.html">
+          <div class="file-name">02-free-conversions-used.html</div>
+          <div class="file-desc">You've used your 3 free conversions</div>
+        </a>
+      </li>
+      <li>
+        <a href="03-password-reset.html">
+          <div class="file-name">03-password-reset.html</div>
+          <div class="file-desc">Reset your CrushSVG password</div>
+        </a>
+      </li>
+      <li>
+        <a href="04-product-update.html">
+          <div class="file-name">04-product-update.html</div>
+          <div class="file-desc">Four new tools, one converter</div>
+        </a>
+      </li>
+      <li>
+        <a href="05-newsletter.html">
+          <div class="file-name">05-newsletter.html</div>
+          <div class="file-desc">Getting SVGs to render in Outlook (finally)</div>
+        </a>
+      </li>
+      <li>
+        <a href="06-upgrade-pro.html">
+          <div class="file-name">06-upgrade-pro.html</div>
+          <div class="file-desc">Batch convert. Ship faster.</div>
+        </a>
+      </li>
+      <li>
+        <a href="07-download-ready.html">
+          <div class="file-name">07-download-ready.html</div>
+          <div class="file-desc">Your PNGs are ready</div>
+        </a>
+      </li>
+      <li>
+        <a href="08-re-engagement.html">
+          <div class="file-name">08-re-engagement.html</div>
+          <div class="file-desc">Still juggling converters?</div>
+        </a>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
