@@ -56,11 +56,12 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
   .social-img{width:17px!important;height:17px!important;}
   .social-sep{width:6px!important;}
 
-  /* Footer bottom stays 1 line */
-  .footer-bottom-col{display:table-cell!important;width:58%!important;text-align:left!important;vertical-align:middle!important;}
-  .footer-copy-col{display:table-cell!important;width:42%!important;text-align:right!important;vertical-align:middle!important;padding-top:0!important;}
-  .footer-links-p{font-size:10px!important;line-height:15px!important;text-align:left!important;}
-  .footer-copy-p{font-size:10px!important;line-height:15px!important;text-align:right!important;}
+  /* Footer bottom: full width centered links */
+  .footer-bottom-col{display:block!important;width:100%!important;text-align:center!important;}
+  .footer-copy-col{display:block!important;width:100%!important;text-align:center!important;padding-top:10px!important;}
+  .footer-links-p{font-size:11px!important;line-height:18px!important;text-align:center!important;}
+  .footer-copy-p{font-size:11px!important;line-height:18px!important;text-align:center!important;}
+  .footer-sep{padding:0 5px!important;}
 }
 
 /* Extra small / Minimum mobile devices (<= 380px) */
@@ -81,7 +82,9 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
   .social-link{width:28px!important;height:28px!important;line-height:26px!important;}
   .social-img{width:15px!important;height:15px!important;}
   .social-sep{width:4px!important;}
-  .footer-links-p,.footer-copy-p{font-size:9px!important;}
+  .footer-links-p{font-size:10px!important;line-height:16px!important;text-align:center!important;}
+  .footer-copy-p{font-size:10px!important;line-height:16px!important;text-align:center!important;}
+  .footer-sep{padding:0 3px!important;}
 }
 </style>
 </head>
@@ -169,14 +172,12 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                       <td class="pad" style="padding:28px 40px 32px;background:#FFFBF7;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td class="footer-brand-col" valign="middle" align="left" style="text-align:left;">
+                            <td valign="middle" align="left" style="text-align:left;">
                               <a href="https://www.crushsvg.net" style="display:inline-block;text-decoration:none;border:0;">
                                 <img class="footer-logo" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png" width="136" height="34" alt="CrushSVG" style="display:block;border:0;width:136px;height:34px;">
                               </a>
-                              <div style="height:8px;line-height:8px;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
-                              <p class="footer-tagline" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">Free SVG to PNG. Private by design.</p>
                             </td>
-                            <td class="footer-social-col" valign="middle" align="right" style="text-align:right;">
+                            <td valign="middle" align="right" style="text-align:right;">
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" class="social-table" style="border-collapse:separate !important;margin:0 0 0 auto;">
                                 <tr>
                                   <td class="social-cell" width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
@@ -239,6 +240,11 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                               </table>
                             </td>
                           </tr>
+                          <tr>
+                            <td colspan="2" align="left" style="padding-top:10px;text-align:left;">
+                              <p class="footer-tagline" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">Free SVG to PNG. Private by design.</p>
+                            </td>
+                          </tr>
                         </table>
                       </td>
                     </tr>
@@ -247,7 +253,9 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
                             <td class="footer-bottom-col" valign="middle" align="left" style="text-align:left;">
-                              <p class="footer-links-p" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#ffffff;text-align:left;"><a href="https://www.crushsvg.net/blog" style="color:#ffffff;text-decoration:none;">Blog</a><span style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/svg-guides" style="color:#ffffff;text-decoration:none;">Guides</a><span style="padding:0 8px;">&bull;</span><a href="{{unsubscribe_url}}" style="color:#ffffff;text-decoration:none;">Unsubscribe</a><span style="padding:0 8px;">&bull;</span><a href="mailto:support@crushsvg.net" style="color:#ffffff;text-decoration:none;">Support</a></p>
+                              <p class="footer-links-p" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#ffffff;text-align:left;">
+                                <a href="https://www.crushsvg.net/blog" style="color:#ffffff;text-decoration:none;">Blog</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/svg-guides" style="color:#ffffff;text-decoration:none;">Guides</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="{{unsubscribe_url}}" style="color:#ffffff;text-decoration:none;">Unsubscribe</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="mailto:support@crushsvg.net" style="color:#ffffff;text-decoration:none;">Support</a>
+                              </p>
                             </td>
                             <td class="footer-bottom-col footer-copy-col" valign="middle" align="right" style="text-align:right;">
                               <p class="footer-copy-p" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#ffffff;text-align:right;">&copy; 2026 CrushSVG</p>

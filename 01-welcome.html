@@ -105,6 +105,7 @@
         width: 33.33% !important;
         padding: 0 4px !important;
         vertical-align: top !important;
+        text-align: center !important;
       }
 
       .step-card-pad {
@@ -116,12 +117,15 @@
         height: 32px !important;
         line-height: 30px !important;
         font-size: 14px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
       }
 
       .step-txt {
         font-size: 11px !important;
         line-height: 14px !important;
         margin: 6px 0 0 !important;
+        text-align: center !important;
       }
 
       /* Header stays 1 line */
@@ -197,32 +201,34 @@
         width: 6px !important;
       }
 
-      /* Footer bottom stays 1 line */
+      /* Footer bottom: full width centered links */
       .footer-bottom-col {
-        display: table-cell !important;
-        width: 58% !important;
-        text-align: left !important;
-        vertical-align: middle !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
       }
 
       .footer-copy-col {
-        display: table-cell !important;
-        width: 42% !important;
-        text-align: right !important;
-        vertical-align: middle !important;
-        padding-top: 0 !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding-top: 10px !important;
       }
 
       .footer-links-p {
-        font-size: 10px !important;
-        line-height: 15px !important;
-        text-align: left !important;
+        font-size: 11px !important;
+        line-height: 18px !important;
+        text-align: center !important;
       }
 
       .footer-copy-p {
-        font-size: 10px !important;
-        line-height: 15px !important;
-        text-align: right !important;
+        font-size: 11px !important;
+        line-height: 18px !important;
+        text-align: center !important;
+      }
+
+      .footer-sep {
+        padding: 0 5px !important;
       }
     }
 
@@ -248,11 +254,14 @@
         height: 28px !important;
         line-height: 26px !important;
         font-size: 12px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
       }
 
       .step-txt {
         font-size: 10px !important;
         line-height: 13px !important;
+        text-align: center !important;
       }
 
       .hdr-logo {
@@ -308,13 +317,19 @@
       }
 
       .footer-links-p {
-        font-size: 9px !important;
-        line-height: 13px !important;
+        font-size: 10px !important;
+        line-height: 16px !important;
+        text-align: center !important;
       }
 
       .footer-copy-p {
-        font-size: 9px !important;
-        line-height: 13px !important;
+        font-size: 10px !important;
+        line-height: 16px !important;
+        text-align: center !important;
+      }
+
+      .footer-sep {
+        padding: 0 3px !important;
       }
     }
   </style>
@@ -405,50 +420,49 @@
                           </div>
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
-                              <td class="step" width="33%" align="center" valign="top" style="padding:0 6px;">
+                              <td class="step" width="33%" align="center" valign="top" style="padding:0 6px;text-align:center;">
                                 <!--[if mso]>
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="margin:0 auto;">
                                   <tr>
-                                    <td width="44" height="44" align="center" valign="middle" style="width:44px;height:44px;border:1px solid #E8A882;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:44px;font-weight:bold;color:#D94A1E;">1</td>
+                                    <td width="44" height="44" align="center" valign="middle" style="width:44px;height:44px;border:1px solid #E8A882;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:44px;font-weight:bold;color:#D94A1E;text-align:center;">1</td>
                                   </tr>
                                 </table>
                                 <![endif]-->
                                 <!--[if !mso]><!-->
-                                <div class="step-circle" style="display:inline-block;width:44px;height:44px;line-height:42px;border:1px solid #E8A882;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#D94A1E;box-sizing:border-box;">1</div>
+                                <div class="step-circle" style="display:inline-block;width:44px;height:44px;line-height:42px;border:1px solid #E8A882;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#D94A1E;box-sizing:border-box;margin:0 auto;">1</div>
                                 <!--<![endif]-->
                                 <p class="step-txt"
-                                  style="margin:10px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:bold;color:#3A1F14;">
+                                  style="margin:10px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:bold;color:#3A1F14;text-align:center;">
                                   Upload or paste SVG</p>
                               </td>
-                              <td class="step" width="33%" align="center" valign="top" style="padding:0 6px;">
+                              <td class="step" width="33%" align="center" valign="top" style="padding:0 6px;text-align:center;">
                                 <!--[if mso]>
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="margin:0 auto;">
                                   <tr>
-                                    <td width="44" height="44" align="center" valign="middle" style="width:44px;height:44px;border:1px solid #E8A882;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:44px;font-weight:bold;color:#D94A1E;">2</td>
+                                    <td width="44" height="44" align="center" valign="middle" style="width:44px;height:44px;border:1px solid #E8A882;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:44px;font-weight:bold;color:#D94A1E;text-align:center;">2</td>
                                   </tr>
                                 </table>
                                 <![endif]-->
                                 <!--[if !mso]><!-->
-                                <div class="step-circle" style="display:inline-block;width:44px;height:44px;line-height:42px;border:1px solid #E8A882;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#D94A1E;box-sizing:border-box;">2</div>
+                                <div class="step-circle" style="display:inline-block;width:44px;height:44px;line-height:42px;border:1px solid #E8A882;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#D94A1E;box-sizing:border-box;margin:0 auto;">2</div>
                                 <!--<![endif]-->
                                 <p class="step-txt"
-                                  style="margin:10px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:bold;color:#3A1F14;">
+                                  style="margin:10px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:bold;color:#3A1F14;text-align:center;">
                                   Adjust size &amp; options</p>
                               </td>
-                              <td class="step" width="33%" align="center" valign="top" style="padding:0 6px;">
+                              <td class="step" width="33%" align="center" valign="top" style="padding:0 6px;text-align:center;">
                                 <!--[if mso]>
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="margin:0 auto;">
                                   <tr>
-                                    <td width="44" height="44" align="center" valign="middle" style="width:44px;height:44px;border:1px solid #E8A882;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:44px;font-weight:bold;color:#D94A1E;">3</td>
+                                    <td width="44" height="44" align="center" valign="middle" style="width:44px;height:44px;border:1px solid #E8A882;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:44px;font-weight:bold;color:#D94A1E;text-align:center;">3</td>
                                   </tr>
                                 </table>
                                 <![endif]-->
                                 <!--[if !mso]><!-->
-                                <div class="step-circle" style="display:inline-block;width:44px;height:44px;line-height:42px;border:1px solid #E8A882;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#D94A1E;box-sizing:border-box;">3</div>
+                                <div class="step-circle" style="display:inline-block;width:44px;height:44px;line-height:42px;border:1px solid #E8A882;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#D94A1E;box-sizing:border-box;margin:0 auto;">3</div>
                                 <!--<![endif]-->
                                 <p class="step-txt"
-                                  style="margin:10px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:bold;color:#3A1F14;">
-                                  Download transparent PNG</p>
+                                  style="margin:10px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:bold;color:#3A1F14;text-align:center;">
                               </td>
                             </tr>
                           </table>
@@ -503,14 +517,12 @@
                   <td class="pad" style="padding:28px 40px 32px;background:#FFFBF7;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td class="footer-brand-col" valign="middle" align="left" style="text-align:left;">
+                        <td valign="middle" align="left" style="text-align:left;">
                           <a href="https://www.crushsvg.net" style="display:inline-block;text-decoration:none;border:0;">
                             <img class="footer-logo" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png" width="136" height="34" alt="CrushSVG" style="display:block;border:0;width:136px;height:34px;">
                           </a>
-                          <div style="height:8px;line-height:8px;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
-                          <p class="footer-tagline" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">Free SVG to PNG. Private by design.</p>
                         </td>
-                        <td class="footer-social-col" valign="middle" align="right" style="text-align:right;">
+                        <td valign="middle" align="right" style="text-align:right;">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" class="social-table" style="border-collapse:separate !important;margin:0 0 0 auto;">
                             <tr>
                               <td width="38" height="38" class="social-cell" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
@@ -573,6 +585,11 @@
                           </table>
                         </td>
                       </tr>
+                      <tr>
+                        <td colspan="2" align="left" style="padding-top:10px;text-align:left;">
+                          <p class="footer-tagline" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">Free SVG to PNG. Private by design.</p>
+                        </td>
+                      </tr>
                     </table>
                   </td>
                 </tr>
@@ -582,7 +599,7 @@
                       <tr>
                         <td class="footer-bottom-col" valign="middle" align="left" style="text-align:left;">
                           <p class="footer-links-p" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#ffffff;text-align:left;">
-                            <a href="https://www.crushsvg.net/terms" style="color:#ffffff;text-decoration:none;">Terms</a><span style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/privacy" style="color:#ffffff;text-decoration:none;">Privacy</a><span style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net" style="color:#ffffff;text-decoration:none;">Free forever</a><span style="padding:0 8px;">&bull;</span><a href="mailto:support@crushsvg.net" style="color:#ffffff;text-decoration:none;">Support</a>
+                            <a href="https://www.crushsvg.net/terms" style="color:#ffffff;text-decoration:none;">Terms</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/privacy" style="color:#ffffff;text-decoration:none;">Privacy</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net" style="color:#ffffff;text-decoration:none;">Free forever</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="mailto:support@crushsvg.net" style="color:#ffffff;text-decoration:none;">Support</a>
                           </p>
                         </td>
                         <td class="footer-bottom-col footer-copy-col" valign="middle" align="right" style="text-align:right;">
