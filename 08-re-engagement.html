@@ -16,24 +16,61 @@ table[style*="border-radius"],table[style*="border:"]{border-collapse:separate!i
 img{-ms-interpolation-mode:bicubic;border:0;outline:none;text-decoration:none;}
 a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;}
 @media only screen and (max-width:620px){
-.w{width:100%!important;max-width:100%!important;}
-.pad{padding-left:20px!important;padding-right:20px!important;}
-.col{display:block!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;}
-.gap{display:block!important;width:100%!important;height:14px!important;line-height:14px!important;}
-.h1{font-size:28px!important;line-height:34px!important;}
-.h1l{font-size:32px!important;line-height:38px!important;}
-.step{display:block!important;width:100%!important;padding:10px 0!important;}
-.cta{display:block!important;padding:20px 24px 0!important;text-align:left!important;}
-.cta table{margin:0!important;}
-.btn{padding-left:22px!important;padding-right:22px!important;white-space:normal!important;letter-spacing:0!important;}
-.fr{padding-left:12px!important;padding-right:12px!important;font-size:13px!important;white-space:normal!important;}
-.footer-brand-col{display:block!important;width:100%!important;max-width:100%!important;text-align:center!important;}
-.footer-social-col{display:block!important;width:100%!important;max-width:100%!important;text-align:center!important;padding-top:20px!important;}
-.social-table{margin:0 auto!important;float:none!important;}
-.footer-bottom-col{display:block!important;width:100%!important;max-width:100%!important;text-align:center!important;}
-.footer-copy-col{display:block!important;width:100%!important;max-width:100%!important;text-align:center!important;padding-top:12px!important;}
-.footer-links-p{text-align:center!important;}
-.footer-copy-p{text-align:center!important;}
+  .w{width:100%!important;max-width:100%!important;}
+  .pad{padding-left:16px!important;padding-right:16px!important;}
+  .h1{font-size:26px!important;line-height:32px!important;}
+  .h1l{font-size:30px!important;line-height:36px!important;}
+
+  /* Header stays 1 line */
+  .hdr-logo{width:110px!important;height:auto!important;}
+  .btn-hdr{padding:7px 12px!important;font-size:12px!important;line-height:16px!important;}
+
+  /* Main CTA button */
+  .btn-main{padding:12px 20px!important;font-size:13px!important;line-height:18px!important;max-width:100%!important;white-space:normal!important;}
+
+  /* Feature rows stay 1 line */
+  .re-cell-left{padding:14px 12px!important;}
+  .re-cell-right{padding:14px 12px 14px 0!important;}
+  .re-title{font-size:14px!important;line-height:18px!important;}
+  .re-sub{font-size:12px!important;line-height:16px!important;}
+  .re-link{font-size:12px!important;}
+
+  /* Footer stays 1 line: Brand left, Social right */
+  .footer-brand-col{display:table-cell!important;width:60%!important;text-align:left!important;vertical-align:middle!important;}
+  .footer-logo{width:100px!important;height:auto!important;}
+  .footer-tagline{font-size:10px!important;line-height:14px!important;margin:4px 0 0!important;}
+  .footer-social-col{display:table-cell!important;width:40%!important;text-align:right!important;vertical-align:middle!important;padding-top:0!important;}
+  .social-table{margin:0 0 0 auto!important;float:right!important;}
+  .social-cell{width:32px!important;height:32px!important;}
+  .social-link{width:32px!important;height:32px!important;line-height:30px!important;}
+  .social-img{width:17px!important;height:17px!important;}
+  .social-sep{width:6px!important;}
+
+  /* Footer bottom stays 1 line */
+  .footer-bottom-col{display:table-cell!important;width:58%!important;text-align:left!important;vertical-align:middle!important;}
+  .footer-copy-col{display:table-cell!important;width:42%!important;text-align:right!important;vertical-align:middle!important;padding-top:0!important;}
+  .footer-links-p{font-size:10px!important;line-height:15px!important;text-align:left!important;}
+  .footer-copy-p{font-size:10px!important;line-height:15px!important;text-align:right!important;}
+}
+
+/* Extra small / Minimum mobile devices (<= 380px) */
+@media only screen and (max-width:380px){
+  .pad{padding-left:12px!important;padding-right:12px!important;}
+  .h1{font-size:22px!important;line-height:28px!important;}
+  .hdr-logo{width:95px!important;}
+  .btn-hdr{padding:6px 10px!important;font-size:11px!important;}
+  .btn-main{padding:10px 16px!important;font-size:12px!important;}
+  .re-cell-left{padding:10px 8px!important;}
+  .re-cell-right{padding:10px 8px 10px 0!important;}
+  .re-title{font-size:13px!important;line-height:17px!important;}
+  .re-sub{font-size:11px!important;line-height:15px!important;}
+  .footer-logo{width:85px!important;}
+  .footer-tagline{font-size:9px!important;line-height:12px!important;}
+  .social-cell{width:28px!important;height:28px!important;}
+  .social-link{width:28px!important;height:28px!important;line-height:26px!important;}
+  .social-img{width:15px!important;height:15px!important;}
+  .social-sep{width:4px!important;}
+  .footer-links-p,.footer-copy-p{font-size:9px!important;}
 }
 </style>
 </head>
@@ -51,11 +88,11 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                       <td class="pad" style="padding:28px 40px 0;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td valign="middle" style="width:50%;"><a href="https://www.crushsvg.net"><img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png" width="136" height="34" alt="CrushSVG" style="display:block;border:0;width:136px;height:34px;"></a></td>
+                            <td valign="middle" style="width:50%;"><a href="https://www.crushsvg.net"><img class="hdr-logo" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png" width="136" height="34" alt="CrushSVG" style="display:block;border:0;width:136px;height:34px;"></a></td>
                             <td valign="middle" align="right" style="width:50%;">
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" style="margin:0 0 0 auto;">
                                 <tr>
-                                  <td align="right"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.crushsvg.net" style="height:40px;v-text-anchor:middle;width:127px;" arcsize="16%" fillcolor="#D94A1E" strokecolor="#D94A1E"><w:anchorlock/><center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;">Visit Site</center></v:roundrect><![endif]--><!--[if !mso]><!--><a class="btn" href="https://www.crushsvg.net" style="mso-hide:all;background:#D94A1E;background-image:linear-gradient(90deg,#D94A1E,#F58A2E);border-radius:8px;display:inline-block;padding:10px 20px;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0;white-space:nowrap;mso-line-height-rule:exactly;">Visit Site</a><!--<![endif]--></td>
+                                  <td align="right"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.crushsvg.net" style="height:40px;v-text-anchor:middle;width:127px;" arcsize="16%" fillcolor="#D94A1E" strokecolor="#D94A1E"><w:anchorlock/><center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;">Visit Site</center></v:roundrect><![endif]--><!--[if !mso]><!--><a class="btn btn-hdr" href="https://www.crushsvg.net" style="mso-hide:all;background:#D94A1E;background-image:linear-gradient(90deg,#D94A1E,#F58A2E);border-radius:8px;display:inline-block;padding:10px 20px;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0;white-space:nowrap;mso-line-height-rule:exactly;">Visit Site</a><!--<![endif]--></td>
                                 </tr>
                               </table>
                             </td>
@@ -67,7 +104,7 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                       <td class="pad" align="center" style="padding:48px 48px 32px;"><h1 class="h1" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:34px;line-height:40px;font-weight:bold;color:#3A1F14;letter-spacing:-0.3px;font-size:40px;line-height:46px;">Still juggling<br>converters?</h1><p style="margin:14px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:18px;line-height:26px;font-weight:bold;color:#E8703A;">It's been a while. Your account is exactly where you left it.</p><p style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#6B5A50;margin:20px auto 0;max-width:430px;">Since your last visit we added PNG to SVG, an image resizer, an AI background remover and SVG to React. Same rule as always: free, private, no install.</p><div style="height:28px;line-height:28px;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
                           <tr>
-                            <td align="left"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.crushsvg.net" style="height:50px;v-text-anchor:middle;width:322px;" arcsize="16%" fillcolor="#D94A1E" strokecolor="#D94A1E"><w:anchorlock/><center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;">PICK UP WHERE YOU LEFT OFF</center></v:roundrect><![endif]--><!--[if !mso]><!--><a class="btn" href="https://www.crushsvg.net" style="mso-hide:all;background:#D94A1E;background-image:linear-gradient(90deg,#D94A1E,#F58A2E);border-radius:8px;display:inline-block;padding:15px 40px;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0.5px;white-space:nowrap;mso-line-height-rule:exactly;">PICK UP WHERE YOU LEFT OFF</a><!--<![endif]--></td>
+                            <td align="left"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.crushsvg.net" style="height:50px;v-text-anchor:middle;width:322px;" arcsize="16%" fillcolor="#D94A1E" strokecolor="#D94A1E"><w:anchorlock/><center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;">PICK UP WHERE YOU LEFT OFF</center></v:roundrect><![endif]--><!--[if !mso]><!--><a class="btn btn-main" href="https://www.crushsvg.net" style="mso-hide:all;background:#D94A1E;background-image:linear-gradient(90deg,#D94A1E,#F58A2E);border-radius:8px;display:inline-block;padding:15px 40px;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0.5px;white-space:nowrap;mso-line-height-rule:exactly;">PICK UP WHERE YOU LEFT OFF</a><!--<![endif]--></td>
                           </tr>
                         </table>
                       </td>
@@ -79,16 +116,16 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                       <td class="pad" style="padding:0 40px 40px;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFF4EA;border:1px solid #F3D9C6;border-radius:16px;border-collapse:separate !important;">
                           <tr>
-                            <td style="padding:18px 28px;border-bottom:1px solid #F3D9C6;"><p style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">Remove a photo background</p><p style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">Clean transparent PNG in seconds.</p></td>
-                            <td align="right" valign="middle" style="padding:18px 28px 18px 0;border-bottom:1px solid #F3D9C6;"><a href="https://www.crushsvg.net/background-remover" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Try &rarr;</a></td>
+                            <td class="re-cell-left" style="padding:18px 28px;border-bottom:1px solid #F3D9C6;"><p class="re-title" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">Remove a photo background</p><p class="re-sub" style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">Clean transparent PNG in seconds.</p></td>
+                            <td class="re-cell-right" align="right" valign="middle" style="padding:18px 28px 18px 0;border-bottom:1px solid #F3D9C6;"><a class="re-link" href="https://www.crushsvg.net/background-remover" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Try &rarr;</a></td>
                           </tr>
                           <tr>
-                            <td style="padding:18px 28px;border-bottom:1px solid #F3D9C6;"><p style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">Vectorize a PNG</p><p style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">Turn raster logos back into SVG.</p></td>
-                            <td align="right" valign="middle" style="padding:18px 28px 18px 0;border-bottom:1px solid #F3D9C6;"><a href="https://www.crushsvg.net/png-to-svg" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Try &rarr;</a></td>
+                            <td class="re-cell-left" style="padding:18px 28px;border-bottom:1px solid #F3D9C6;"><p class="re-title" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">Vectorize a PNG</p><p class="re-sub" style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">Turn raster logos back into SVG.</p></td>
+                            <td class="re-cell-right" align="right" valign="middle" style="padding:18px 28px 18px 0;border-bottom:1px solid #F3D9C6;"><a class="re-link" href="https://www.crushsvg.net/png-to-svg" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Try &rarr;</a></td>
                           </tr>
                           <tr>
-                            <td style="padding:18px 28px;"><p style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">Read the SVG guides</p><p style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">Outlook, Figma, React, email signatures.</p></td>
-                            <td align="right" valign="middle" style="padding:18px 28px 18px 0;"><a href="https://www.crushsvg.net/svg-guides" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Read &rarr;</a></td>
+                            <td class="re-cell-left" style="padding:18px 28px;"><p class="re-title" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">Read the SVG guides</p><p class="re-sub" style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">Outlook, Figma, React, email signatures.</p></td>
+                            <td class="re-cell-right" align="right" valign="middle" style="padding:18px 28px 18px 0;"><a class="re-link" href="https://www.crushsvg.net/svg-guides" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Read &rarr;</a></td>
                           </tr>
                         </table>
                       </td>
@@ -108,15 +145,15 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                           <tr>
                             <td class="footer-brand-col" valign="middle" align="left" style="text-align:left;">
                               <a href="https://www.crushsvg.net" style="display:inline-block;text-decoration:none;border:0;">
-                                <img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png" width="136" height="34" alt="CrushSVG" style="display:block;border:0;width:136px;height:34px;">
+                                <img class="footer-logo" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png" width="136" height="34" alt="CrushSVG" style="display:block;border:0;width:136px;height:34px;">
                               </a>
                               <div style="height:8px;line-height:8px;font-size:0;mso-line-height-rule:exactly;">&nbsp;</div>
-                              <p style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">Free SVG to PNG. Private by design.</p>
+                              <p class="footer-tagline" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">Free SVG to PNG. Private by design.</p>
                             </td>
                             <td class="footer-social-col" valign="middle" align="right" style="text-align:right;">
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" class="social-table" style="border-collapse:separate !important;margin:0 0 0 auto;">
                                 <tr>
-                                  <td width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
+                                  <td class="social-cell" width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
                                     <!--[if mso]>
                                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="38" height="38">
                                       <tr>
@@ -129,13 +166,13 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                                     </table>
                                     <![endif]-->
                                     <!--[if !mso]><!-->
-                                    <a href="https://www.facebook.com/profile.php?id=61593405728605" target="_blank" style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
-                                      <img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/facebook-orange-80_sf4f4b.png" width="18" height="18" alt="Facebook" style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
+                                    <a class="social-link" href="https://www.facebook.com/profile.php?id=61593405728605" target="_blank" style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
+                                      <img class="social-img" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/facebook-orange-80_sf4f4b.png" width="18" height="18" alt="Facebook" style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
                                     </a>
                                     <!--<![endif]-->
                                   </td>
-                                  <td width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
-                                  <td width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
+                                  <td class="social-sep" width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
+                                  <td class="social-cell" width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
                                     <!--[if mso]>
                                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="38" height="38">
                                       <tr>
@@ -148,13 +185,13 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                                     </table>
                                     <![endif]-->
                                     <!--[if !mso]><!-->
-                                    <a href="https://www.instagram.com/crushsvg_net/" target="_blank" style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
-                                      <img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/instagram-orange-80_pdvjgj.png" width="18" height="18" alt="Instagram" style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
+                                    <a class="social-link" href="https://www.instagram.com/crushsvg_net/" target="_blank" style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
+                                      <img class="social-img" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/instagram-orange-80_pdvjgj.png" width="18" height="18" alt="Instagram" style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
                                     </a>
                                     <!--<![endif]-->
                                   </td>
-                                  <td width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
-                                  <td width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
+                                  <td class="social-sep" width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
+                                  <td class="social-cell" width="38" height="38" align="center" valign="middle" style="width:38px;height:38px;padding:0;">
                                     <!--[if mso]>
                                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="38" height="38">
                                       <tr>
@@ -167,8 +204,8 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                                     </table>
                                     <![endif]-->
                                     <!--[if !mso]><!-->
-                                    <a href="https://www.linkedin.com/company/crushsvg" target="_blank" style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
-                                      <img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/linkedin-orange-80_aytt7w.png" width="18" height="18" alt="LinkedIn" style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
+                                    <a class="social-link" href="https://www.linkedin.com/company/crushsvg" target="_blank" style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
+                                      <img class="social-img" src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/linkedin-orange-80_aytt7w.png" width="18" height="18" alt="LinkedIn" style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
                                     </a>
                                     <!--<![endif]-->
                                   </td>
