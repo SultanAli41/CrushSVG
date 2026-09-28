@@ -1,0 +1,12 @@
+<svg width="272" height="68" viewBox="0 0 272 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brand Icon Box -->
+  <rect width="68" height="68" rx="16" fill="#D94A1E"/>
+  
+  <!-- Stylized Geometric CrushSVG Monogram -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 15C18.134 15 15 18.134 15 22V46C15 49.866 18.134 53 22 53H48C50.7614 53 53 50.7614 53 48V34H33V41H46V46H22V22H53V15H22Z" fill="white"/>
+
+  <!-- CrushSVG Wordmark -->
+  <text x="82" y="47" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="41" font-weight="800" letter-spacing="-0.5px">
+    <tspan fill="#1F1A17">Crush</tspan><tspan fill="#D94A1E">SVG</tspan>
+  </text>
+</svg>

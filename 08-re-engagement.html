@@ -74,18 +74,19 @@
       }
 
       .btn-hdr {
-        padding: 7px 12px !important;
-        font-size: 12px !important;
-        line-height: 16px !important;
-      }
-
-      /* Main CTA button */
-      .btn-main {
-        padding: 12px 20px !important;
+        padding: 9px 18px !important;
         font-size: 13px !important;
         line-height: 18px !important;
+      }
+
+      /* Main CTA button - maintain desktop gap and proportions */
+      .btn-main {
+        padding: 15px 36px !important;
+        font-size: 15px !important;
+        line-height: 20px !important;
+        display: inline-block !important;
+        white-space: nowrap !important;
         max-width: 100% !important;
-        white-space: normal !important;
       }
 
       /* Feature rows stay 1 line */
@@ -144,19 +145,34 @@
       }
 
       .social-cell {
-        width: 32px !important;
-        height: 32px !important;
+        width: 34px !important;
+        height: 34px !important;
+        text-align: center !important;
+        vertical-align: middle !important;
       }
 
       .social-link {
-        width: 32px !important;
-        height: 32px !important;
-        line-height: 30px !important;
+        width: 34px !important;
+        height: 34px !important;
+        display: -webkit-inline-box !important;
+        display: -webkit-inline-flex !important;
+        display: inline-flex !important;
+        -webkit-box-align: center !important;
+        -webkit-align-items: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -webkit-justify-content: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        line-height: normal !important;
       }
 
       .social-img {
         width: 17px !important;
         height: 17px !important;
+        display: block !important;
+        margin: 0 auto !important;
       }
 
       .social-sep {
@@ -211,31 +227,9 @@
       }
 
       .btn-hdr {
-        padding: 6px 10px !important;
-        font-size: 11px !important;
-      }
-
-      .btn-main {
-        padding: 10px 16px !important;
+        padding: 8px 14px !important;
         font-size: 12px !important;
-      }
-
-      .re-cell-left {
-        padding: 10px 8px !important;
-      }
-
-      .re-cell-right {
-        padding: 10px 8px 10px 0 !important;
-      }
-
-      .re-title {
-        font-size: 13px !important;
-        line-height: 17px !important;
-      }
-
-      .re-sub {
-        font-size: 11px !important;
-        line-height: 15px !important;
+        line-height: 16px !important;
       }
 
       .footer-logo {
@@ -248,19 +242,34 @@
       }
 
       .social-cell {
-        width: 28px !important;
-        height: 28px !important;
+        width: 30px !important;
+        height: 30px !important;
+        text-align: center !important;
+        vertical-align: middle !important;
       }
 
       .social-link {
-        width: 28px !important;
-        height: 28px !important;
-        line-height: 26px !important;
+        width: 30px !important;
+        height: 30px !important;
+        display: -webkit-inline-box !important;
+        display: -webkit-inline-flex !important;
+        display: inline-flex !important;
+        -webkit-box-align: center !important;
+        -webkit-align-items: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -webkit-justify-content: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        line-height: normal !important;
       }
 
       .social-img {
         width: 15px !important;
         height: 15px !important;
+        display: block !important;
+        margin: 0 auto !important;
       }
 
       .social-sep {
@@ -304,10 +313,32 @@
                   <td class="pad" style="padding:28px 40px 0;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td valign="middle" style="width:50%;"><a href="https://www.crushsvg.net"><img class="hdr-logo"
+                        <td valign="middle" style="width:50%;">
+                          <a href="https://www.crushsvg.net"
+                            style="display:inline-block;text-decoration:none;border:0;">
+                            <!--[if mso]>
+                            <img class="hdr-logo"
                               src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png"
                               width="136" height="34" alt="CrushSVG"
-                              style="display:block;border:0;width:136px;height:34px;"></a></td>
+                              style="display:block;border:0;width:136px;height:34px;">
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <svg class="hdr-logo" width="136" height="34" viewBox="0 0 136 34" fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="display:block;border:0;width:136px;height:34px;">
+                              <rect width="34" height="34" rx="8" fill="#D94A1E" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 7.5C9.067 7.5 7.5 9.067 7.5 11V23C7.5 24.933 9.067 26.5 11 26.5H24C25.38 26.5 26.5 25.38 26.5 24V17H16.5V20.5H23V23H11V11H26.5V7.5H11Z"
+                                fill="white" />
+                              <text x="41" y="24" font-family="'Outfit','Nunito Sans',Arial,Helvetica,sans-serif"
+                                font-size="20.5" font-weight="800" letter-spacing="-0.4px">
+                                <tspan fill="#1F1A17">Crush</tspan>
+                                <tspan fill="#D94A1E">SVG</tspan>
+                              </text>
+                            </svg>
+                            <!--<![endif]-->
+                          </a>
+                        </td>
                         <td valign="middle" align="right" style="width:50%;">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"
                             style="margin:0 0 0 auto;">
@@ -316,7 +347,8 @@
                                 <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.crushsvg.net" style="height:40px;v-text-anchor:middle;width:127px;" arcsize="16%" fillcolor="#D94A1E" strokecolor="#D94A1E"><w:anchorlock/><center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;">Visit Site</center></v:roundrect><![endif]--><!--[if !mso]><!--><a
                                   class="btn btn-hdr" href="https://www.crushsvg.net"
                                   style="mso-hide:all;background:#D94A1E;background-image:linear-gradient(90deg,#D94A1E,#F58A2E);border-radius:8px;display:inline-block;padding:10px 20px;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0;white-space:nowrap;mso-line-height-rule:exactly;">Visit
-                                  Site</a><!--<![endif]--></td>
+                                  Site</a><!--<![endif]-->
+                              </td>
                             </tr>
                           </table>
                         </td>
@@ -343,7 +375,8 @@
                           <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.crushsvg.net" style="height:50px;v-text-anchor:middle;width:322px;" arcsize="16%" fillcolor="#D94A1E" strokecolor="#D94A1E"><w:anchorlock/><center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;">PICK UP WHERE YOU LEFT OFF</center></v:roundrect><![endif]--><!--[if !mso]><!--><a
                             class="btn btn-main" href="https://www.crushsvg.net"
                             style="mso-hide:all;background:#D94A1E;background-image:linear-gradient(90deg,#D94A1E,#F58A2E);border-radius:8px;display:inline-block;padding:15px 40px;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0.5px;white-space:nowrap;mso-line-height-rule:exactly;">PICK
-                            UP WHERE YOU LEFT OFF</a><!--<![endif]--></td>
+                            UP WHERE YOU LEFT OFF</a><!--<![endif]-->
+                        </td>
                       </tr>
                     </table>
                   </td>
@@ -360,47 +393,104 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
                       style="background:#FFF4EA;border:1px solid #F3D9C6;border-radius:16px;border-collapse:separate !important;">
                       <tr>
-                        <td class="re-cell-left" style="padding:18px 28px;border-bottom:1px solid #F3D9C6;">
+                        <td width="44" valign="middle"
+                          style="width:44px;padding:16px 0 16px 24px;border-bottom:1px solid #F3D9C6;">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                            style="border-collapse:separate !important;">
+                            <tr>
+                              <td width="40" height="40" bgcolor="#FFFFFF" align="center" valign="middle"
+                                style="width:40px;height:40px;background:#FFFFFF;border:1px solid #F3D9C6;border-radius:10px;text-align:center;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D94A1E"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  style="display:block;margin:0 auto;">
+                                  <path
+                                    d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z" />
+                                </svg>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="re-cell-left" valign="middle"
+                          style="padding:16px 16px 16px 14px;border-bottom:1px solid #F3D9C6;">
                           <p class="re-title"
                             style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">
-                            Remove a photo background</p>
+                            AI Background Remover</p>
                           <p class="re-sub"
-                            style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">
-                            Clean transparent PNG in seconds.</p>
+                            style="margin:3px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#6B5A50;">
+                            Clean transparent PNG from any image in seconds.</p>
                         </td>
                         <td class="re-cell-right" align="right" valign="middle"
-                          style="padding:18px 28px 18px 0;border-bottom:1px solid #F3D9C6;"><a class="re-link"
+                          style="padding:16px 24px 16px 0;border-bottom:1px solid #F3D9C6;"><a class="re-link"
                             href="https://www.crushsvg.net/background-remover"
                             style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Try
+                            free
                             &rarr;</a></td>
                       </tr>
                       <tr>
-                        <td class="re-cell-left" style="padding:18px 28px;border-bottom:1px solid #F3D9C6;">
+                        <td width="44" valign="middle"
+                          style="width:44px;padding:16px 0 16px 24px;border-bottom:1px solid #F3D9C6;">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                            style="border-collapse:separate !important;">
+                            <tr>
+                              <td width="40" height="40" bgcolor="#FFFFFF" align="center" valign="middle"
+                                style="width:40px;height:40px;background:#FFFFFF;border:1px solid #F3D9C6;border-radius:10px;text-align:center;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D94A1E"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  style="display:block;margin:0 auto;">
+                                  <path d="m12 19 7-7 3 3-7 7-3-3z" />
+                                  <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                  <path d="m2 2 7.586 7.586" />
+                                  <circle cx="11" cy="11" r="2" />
+                                </svg>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="re-cell-left" valign="middle"
+                          style="padding:16px 16px 16px 14px;border-bottom:1px solid #F3D9C6;">
                           <p class="re-title"
                             style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">
-                            Vectorize a PNG</p>
+                            Vectorize PNG to SVG</p>
                           <p class="re-sub"
-                            style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">
-                            Turn raster logos back into SVG.</p>
+                            style="margin:3px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#6B5A50;">
+                            Convert raster logos and icons back into crisp vectors.</p>
                         </td>
                         <td class="re-cell-right" align="right" valign="middle"
-                          style="padding:18px 28px 18px 0;border-bottom:1px solid #F3D9C6;"><a class="re-link"
+                          style="padding:16px 24px 16px 0;border-bottom:1px solid #F3D9C6;"><a class="re-link"
                             href="https://www.crushsvg.net/png-to-svg"
-                            style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Try
+                            style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Convert
                             &rarr;</a></td>
                       </tr>
                       <tr>
-                        <td class="re-cell-left" style="padding:18px 28px;">
+                        <td width="44" valign="middle" style="width:44px;padding:16px 0 16px 24px;">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                            style="border-collapse:separate !important;">
+                            <tr>
+                              <td width="40" height="40" bgcolor="#FFFFFF" align="center" valign="middle"
+                                style="width:40px;height:40px;background:#FFFFFF;border:1px solid #F3D9C6;border-radius:10px;text-align:center;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D94A1E"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  style="display:block;margin:0 auto;">
+                                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                  <path d="M6 6h10" />
+                                  <path d="M6 10h10" />
+                                </svg>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="re-cell-left" valign="middle" style="padding:16px 16px 16px 14px;">
                           <p class="re-title"
                             style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#3A1F14;">
-                            Read the SVG guides</p>
+                            Explore SVG Guides</p>
                           <p class="re-sub"
-                            style="margin:4px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;color:#6B5A50;">
-                            Outlook, Figma, React, email signatures.</p>
+                            style="margin:3px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#6B5A50;">
+                            Best practices for Outlook, Figma, React, and email signatures.</p>
                         </td>
-                        <td class="re-cell-right" align="right" valign="middle" style="padding:18px 28px 18px 0;"><a
+                        <td class="re-cell-right" align="right" valign="middle" style="padding:16px 24px 16px 0;"><a
                             class="re-link" href="https://www.crushsvg.net/svg-guides"
                             style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#D94A1E;text-decoration:none;white-space:nowrap;">Read
+                            guides
                             &rarr;</a></td>
                       </tr>
                     </table>
@@ -418,19 +508,41 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="pad" style="padding:28px 40px 32px;background:#FFFBF7;">
+                  <td class="pad" style="padding:22px 40px 22px;background:#FFFBF7;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td valign="middle" align="left" style="text-align:left;">
+                        <td class="footer-brand-col" valign="middle" align="left"
+                          style="text-align:left;vertical-align:middle;">
                           <a href="https://www.crushsvg.net"
                             style="display:inline-block;text-decoration:none;border:0;">
+                            <!--[if mso]>
                             <img class="footer-logo"
                               src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/crushsvg-logo-2x_nbmmq4.png"
                               width="136" height="34" alt="CrushSVG"
                               style="display:block;border:0;width:136px;height:34px;">
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <svg class="footer-logo" width="136" height="34" viewBox="0 0 136 34" fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="display:block;border:0;width:136px;height:34px;">
+                              <rect width="34" height="34" rx="8" fill="#D94A1E" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 7.5C9.067 7.5 7.5 9.067 7.5 11V23C7.5 24.933 9.067 26.5 11 26.5H24C25.38 26.5 26.5 25.38 26.5 24V17H16.5V20.5H23V23H11V11H26.5V7.5H11Z"
+                                fill="white" />
+                              <text x="41" y="24" font-family="'Outfit','Nunito Sans',Arial,Helvetica,sans-serif"
+                                font-size="20.5" font-weight="800" letter-spacing="-0.4px">
+                                <tspan fill="#1F1A17">Crush</tspan>
+                                <tspan fill="#D94A1E">SVG</tspan>
+                              </text>
+                            </svg>
+                            <!--<![endif]-->
                           </a>
+                          <p class="footer-tagline"
+                            style="margin:6px 0 0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">
+                            Free SVG to PNG. Private by design.</p>
                         </td>
-                        <td valign="middle" align="right" style="text-align:right;">
+                        <td class="footer-social-col" valign="middle" align="right"
+                          style="text-align:right;vertical-align:middle;">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"
                             class="social-table" style="border-collapse:separate !important;margin:0 0 0 auto;">
                             <tr>
@@ -450,11 +562,11 @@
                                 <!--[if !mso]><!-->
                                 <a class="social-link" href="https://www.facebook.com/profile.php?id=61593405728605"
                                   target="_blank"
-                                  style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
+                                  style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-size:0;text-decoration:none;box-sizing:border-box;vertical-align:middle;">
                                   <img class="social-img"
                                     src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/facebook-orange-80_sf4f4b.png"
                                     width="18" height="18" alt="Facebook"
-                                    style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
+                                    style="display:block;border:0;width:18px;height:18px;margin:0 auto;">
                                 </a>
                                 <!--<![endif]-->
                               </td>
@@ -475,11 +587,11 @@
                                     <![endif]-->
                                 <!--[if !mso]><!-->
                                 <a class="social-link" href="https://www.instagram.com/crushsvg_net/" target="_blank"
-                                  style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
+                                  style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-size:0;text-decoration:none;box-sizing:border-box;vertical-align:middle;">
                                   <img class="social-img"
                                     src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/instagram-orange-80_pdvjgj.png"
                                     width="18" height="18" alt="Instagram"
-                                    style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
+                                    style="display:block;border:0;width:18px;height:18px;margin:0 auto;">
                                 </a>
                                 <!--<![endif]-->
                               </td>
@@ -500,23 +612,16 @@
                                     <![endif]-->
                                 <!--[if !mso]><!-->
                                 <a class="social-link" href="https://www.linkedin.com/company/crushsvg" target="_blank"
-                                  style="display:inline-block;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;line-height:36px;font-size:0;text-decoration:none;box-sizing:border-box;">
+                                  style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:38px;height:38px;background:#ffffff;border:1px solid #F3D9C6;border-radius:50%;-webkit-border-radius:50%;text-align:center;font-size:0;text-decoration:none;box-sizing:border-box;vertical-align:middle;">
                                   <img class="social-img"
                                     src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1790087239/linkedin-orange-80_aytt7w.png"
                                     width="18" height="18" alt="LinkedIn"
-                                    style="display:inline-block;vertical-align:middle;border:0;width:18px;height:18px;">
+                                    style="display:block;border:0;width:18px;height:18px;margin:0 auto;">
                                 </a>
                                 <!--<![endif]-->
                               </td>
                             </tr>
                           </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" align="left" style="padding-top:10px;text-align:left;">
-                          <p class="footer-tagline"
-                            style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;color:#8B7B70;">
-                            Free SVG to PNG. Private by design.</p>
                         </td>
                       </tr>
                     </table>
