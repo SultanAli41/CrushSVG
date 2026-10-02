@@ -15,6 +15,11 @@ table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
 table[style*="border-radius"],table[style*="border:"]{border-collapse:separate!important;}
 img{-ms-interpolation-mode:bicubic;border:0;outline:none;text-decoration:none;}
 a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;}
+
+/* Checkmark icons */
+.feat-check-td{width:22px!important;}
+.feat-check{width:22px!important;height:22px!important;font-size:12px!important;line-height:1!important;display:-webkit-inline-box!important;display:-webkit-inline-flex!important;display:inline-flex!important;-webkit-box-align:center!important;-webkit-align-items:center!important;align-items:center!important;-webkit-box-pack:center!important;-webkit-justify-content:center!important;justify-content:center!important;text-align:center!important;vertical-align:middle!important;}
+
 @media only screen and (max-width:620px){
   .w{width:100%!important;max-width:100%!important;}
   .pad{padding-left:16px!important;padding-right:16px!important;}
@@ -28,6 +33,10 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
   /* Table cells stay 1 clean line */
   .fr{padding:10px 8px!important;font-size:12px!important;line-height:16px!important;}
   .fr-file{max-width:140px!important;word-break:break-word!important;}
+
+  /* Feature check icon */
+  .feat-check-td{width:20px!important;}
+  .feat-check{width:20px!important;height:20px!important;font-size:11px!important;line-height:1!important;display:-webkit-inline-box!important;display:-webkit-inline-flex!important;display:inline-flex!important;-webkit-box-align:center!important;-webkit-align-items:center!important;align-items:center!important;-webkit-box-pack:center!important;-webkit-justify-content:center!important;justify-content:center!important;}
 
   /* Main CTA button - maintain desktop gap and proportions */
   .btn-main{padding:15px 36px!important;font-size:15px!important;line-height:20px!important;display:inline-block!important;white-space:nowrap!important;max-width:100%!important;}
@@ -59,6 +68,8 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
   .btn-hdr{padding:8px 14px!important;font-size:12px!important;line-height:16px!important;}
   .fr{padding:8px 6px!important;font-size:11px!important;line-height:14px!important;}
   .fr-file{max-width:110px!important;}
+  .feat-check-td{width:18px!important;}
+  .feat-check{width:18px!important;height:18px!important;font-size:10px!important;line-height:1!important;display:-webkit-inline-box!important;display:-webkit-inline-flex!important;display:inline-flex!important;-webkit-box-align:center!important;-webkit-align-items:center!important;align-items:center!important;-webkit-box-pack:center!important;-webkit-justify-content:center!important;justify-content:center!important;}
   .footer-logo{width:85px!important;}
   .footer-tagline{font-size:9px!important;line-height:12px!important;}
   .social-cell{width:30px!important;height:30px!important;text-align:center!important;vertical-align:middle!important;}
@@ -131,8 +142,21 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                             <td class="fr fr-file" style="padding:14px 24px;border-top:1px solid #F3D9C6;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;color:#3A1F14;">
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                  <td width="36" style="width:36px;vertical-align:middle;padding-right:8px;">
-                                    <div style="background:#FFF0E6;border:1px solid #F3D9C6;border-radius:6px;width:34px;height:24px;line-height:24px;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;color:#D94A1E;letter-spacing:0.5px;">PNG</div>
+                                  <td class="feat-check-td" width="22" valign="middle" style="width:22px;vertical-align:middle;padding-right:10px;">
+                                    <!--[if mso]>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="22" height="22">
+                                      <tr>
+                                        <td width="22" height="22" bgcolor="#D94A1E" align="center" valign="middle" style="width:22px;height:22px;background:#D94A1E;border-radius:50%;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:22px;font-weight:bold;color:#ffffff;">&#10003;</td>
+                                      </tr>
+                                    </table>
+                                    <![endif]-->
+                                    <!--[if !mso]><!-->
+                                    <div class="feat-check" style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:22px;height:22px;line-height:1;background:#D94A1E;border-radius:50%;-webkit-border-radius:50%;text-align:center;box-sizing:border-box;vertical-align:middle;">
+                                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                      </svg>
+                                    </div>
+                                    <!--<![endif]-->
                                   </td>
                                   <td style="vertical-align:middle;">
                                     <span style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#3A1F14;">logo-primary.png</span>
@@ -149,8 +173,21 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                             <td class="fr fr-file" style="padding:14px 24px;border-top:1px solid #F3D9C6;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;color:#3A1F14;">
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                  <td width="36" style="width:36px;vertical-align:middle;padding-right:8px;">
-                                    <div style="background:#FFF0E6;border:1px solid #F3D9C6;border-radius:6px;width:34px;height:24px;line-height:24px;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;color:#D94A1E;letter-spacing:0.5px;">PNG</div>
+                                  <td class="feat-check-td" width="22" valign="middle" style="width:22px;vertical-align:middle;padding-right:10px;">
+                                    <!--[if mso]>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="22" height="22">
+                                      <tr>
+                                        <td width="22" height="22" bgcolor="#D94A1E" align="center" valign="middle" style="width:22px;height:22px;background:#D94A1E;border-radius:50%;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:22px;font-weight:bold;color:#ffffff;">&#10003;</td>
+                                      </tr>
+                                    </table>
+                                    <![endif]-->
+                                    <!--[if !mso]><!-->
+                                    <div class="feat-check" style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:22px;height:22px;line-height:1;background:#D94A1E;border-radius:50%;-webkit-border-radius:50%;text-align:center;box-sizing:border-box;vertical-align:middle;">
+                                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                      </svg>
+                                    </div>
+                                    <!--<![endif]-->
                                   </td>
                                   <td style="vertical-align:middle;">
                                     <span style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#3A1F14;">icon-upload.png</span>
@@ -167,8 +204,21 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                             <td class="fr fr-file" style="padding:14px 24px;border-top:1px solid #F3D9C6;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;color:#3A1F14;">
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                  <td width="36" style="width:36px;vertical-align:middle;padding-right:8px;">
-                                    <div style="background:#FFF0E6;border:1px solid #F3D9C6;border-radius:6px;width:34px;height:24px;line-height:24px;text-align:center;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;color:#D94A1E;letter-spacing:0.5px;">PNG</div>
+                                  <td class="feat-check-td" width="22" valign="middle" style="width:22px;vertical-align:middle;padding-right:10px;">
+                                    <!--[if mso]>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="22" height="22">
+                                      <tr>
+                                        <td width="22" height="22" bgcolor="#D94A1E" align="center" valign="middle" style="width:22px;height:22px;background:#D94A1E;border-radius:50%;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:22px;font-weight:bold;color:#ffffff;">&#10003;</td>
+                                      </tr>
+                                    </table>
+                                    <![endif]-->
+                                    <!--[if !mso]><!-->
+                                    <div class="feat-check" style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:22px;height:22px;line-height:1;background:#D94A1E;border-radius:50%;-webkit-border-radius:50%;text-align:center;box-sizing:border-box;vertical-align:middle;">
+                                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                      </svg>
+                                    </div>
+                                    <!--<![endif]-->
                                   </td>
                                   <td style="vertical-align:middle;">
                                     <span style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#3A1F14;">hero-illustration.png</span>
@@ -186,7 +236,29 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                   <td valign="middle" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;color:#3A1F14;">
-                                    <span style="color:#1E7A3C;font-size:13px;margin-right:4px;">&#10003;</span> All 12 files processed <span style="font-weight:normal;color:#8B7B70;">&middot; 3.8 MB total &middot; transparent PNG</span>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td valign="middle" style="padding-right:8px;">
+                                          <!--[if mso]>
+                                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="16" height="16">
+                                            <tr>
+                                              <td width="16" height="16" bgcolor="#D94A1E" align="center" valign="middle" style="width:16px;height:16px;background:#D94A1E;border-radius:50%;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:10px;line-height:16px;font-weight:bold;color:#ffffff;">&#10003;</td>
+                                            </tr>
+                                          </table>
+                                          <![endif]-->
+                                          <!--[if !mso]><!-->
+                                          <div style="display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:16px;height:16px;line-height:1;background:#D94A1E;border-radius:50%;-webkit-border-radius:50%;text-align:center;box-sizing:border-box;vertical-align:middle;">
+                                            <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;">
+                                              <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                          </div>
+                                          <!--<![endif]-->
+                                        </td>
+                                        <td valign="middle" style="font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;color:#3A1F14;">
+                                          All 12 files processed <span style="font-weight:normal;color:#8B7B70;">&middot; 3.8 MB total &middot; transparent PNG</span>
+                                        </td>
+                                      </tr>
+                                    </table>
                                   </td>
                                 </tr>
                                 <tr>
@@ -338,7 +410,7 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
                           <tr>
                             <td class="footer-bottom-col" valign="middle" align="left" style="text-align:left;">
                               <p class="footer-links-p" style="margin:0;font-family:'Outfit','Nunito Sans',Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#ffffff;text-align:left;">
-                                <a href="https://www.crushsvg.net/terms" style="color:#ffffff;text-decoration:none;">Terms</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/privacy" style="color:#ffffff;text-decoration:none;">Privacy</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="mailto:support@crushsvg.net" style="color:#ffffff;text-decoration:none;">Support</a>
+                                <a href="https://www.crushsvg.net/terms" style="color:#ffffff;text-decoration:none;">Terms</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/privacy" style="color:#ffffff;text-decoration:none;">Privacy</a><span class="footer-sep" style="padding:0 8px;">&bull;</span><a href="https://www.crushsvg.net/contact-us" style="color:#ffffff;text-decoration:none;">Support</a>
                               </p>
                             </td>
                             <td class="footer-bottom-col footer-copy-col" valign="middle" align="right" style="text-align:right;">
